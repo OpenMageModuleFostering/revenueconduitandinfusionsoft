@@ -1,58 +1,126 @@
 <?xml version="1.0"?>
 <package>
     <name>RevenueConduitAndInfusionsoft</name>
-    <version>2.0.11</version>
+    <version>2.0.12</version>
     <stability>stable</stability>
     <license>Open Software License (OSL)</license>
     <channel>community</channel>
     <extends/>
-    <summary>Infusionsoft and Magento Integration by Revenue Conduit&#xD;
-Sign up for a 14 day FREE Trial and see what Revenue Conduit can do for you. Then benefit from a low monthly cost starting at $49.95 with no up-front fees or long-term commitments.&#xD;
-Grow your Magento store, Automatically&#xD;
-Benefit from a complete marketing system when you connect your Magento store to Infusionsoft through Revenue Conduit&#xD;
-Feature-Packed and Full of Benefits&#xD;
-Complimentary Full Historical Sync &amp; Real Time 80/20 Statistics&#xD;
-Shortly after connecting Revenue Conduit to Infusionsoft and your shopping cart, we&#x2019;ll build the required fields and start syncing your historical customer and order data. We also enable the real time 80/20 analysis through which you always look for &#x201C;low-hanging fruit&#x201D; campaigns that offer a relatively easy and immediate source of revenue and profit.&#xD;
-Shopping Cart Abandonment Marketing &#xD;
-Automatically recover abandoned shopping carts through a powerful, customizable Infusionsoft campaign. Check your data - it&#x2019;s likely that upwards of 70% of your carts are abandoned. Now, with Revenue Conduit, you can automatically recover more lost carts to grow your top and bottom line. Include your product pictures, cart items and details in a multi-step email campaign. Configure the campaign to provide a coupon code every time your customer abandons a cart, or protect yourself from your customers gaming the system and only deliver a coupon code every other or every third time.&#xD;
-Order Automation &#xD;
-Automatically start one or more Infusionsoft campaigns when a customer places an order&#xD;
-Sync Customers, Orders and Products &#xD;
-As your customers buy, Revenue Conduit automatically syncs all your customers, orders and products to the Infusionsoft CRM system.&#xD;
-Associate Tags to Products and Categories &#xD;
-Infusionsoft uses Tags to segment customers based on what they bought, what they are interested in and how engaged they are. With Revenue Conduit, you can associate any number of Tags to any of your products and product categories, allowing you to easily segment your customers based on their buying behaviors and interests. Why would you want to do this? Think automatic upsell and cross-sell campaigns.&#xD;
-6 Free Infusionsoft Campaigns &#xD;
-Revenue Conduit is not just an integration. We provide a Marketing System for online retailers. Within 24 to 48 hours after you sign up for our Free Marketing System, Revenue Conduit will install 6 campaigns, custom fields, Tags, saved searches and dashboard widgets into your Infusionsoft app. Revenue Conduit was co-founded by Daniel Kurt, an Infusionsoft Certified Consultant with ecommerce expertise and the Marketing System is worth thousands of dollars. You get it for FREE when you sign up for a 30-day free trial.&#xD;
-RFM Segmentation &#xD;
-This one feature alone can provide you with a return on your investment in Revenue Conduit and Infusionsoft. Automatically segment your customers based on the last time they bought, how many times they bought and how much they have spent. Using data that Revenue Conduit calculates prior to syncing your customer after they place an order, your customers will be given a 1-5 rating for Order Recency, Order Frequency and Monetary. This is called RFM Segmentation. The big ecommerce companies use it, and now you can, too!&#xD;
-Campaign ROI Tracking &#xD;
-As part of our Marketing System, you can easily see how much revenue your campaigns generate and track your return on investment. We even build Infusionsoft Dashboard Widgets that show you the ROI and other vital metrics from the 6 Infusionsoft campaigns that come with Revenue Conduit.&#xD;
-Referral Partner Integration &#xD;
-Infusionsoft includes a powerful referral partner system that allows you to build and manage a referral partner program that compensates your partners for sales they help you generate. Revenue Conduit makes it possible for you to sell on your Magento store and track sales and commissions in Infusionsoft.&#xD;
-Newsletter Opt-in &#xD;
-If your customer opts-in to your marketing during checkout, Revenue Conduit will apply your Newsletter Tag to their contact record. Whether or not you use this feature, Revenue Conduit syncs all customers to Infusionsoft as marketable.&#xD;
-Customer Group Sync &#xD;
-Revenue Conduit syncs your customer group to Infusionsoft, allowing you to have specific follow up for Retail, Wholesale, and any other customized Magento customer groups in your business.&#xD;
-Coupon Code Generation, Sync and Automation &#xD;
-Automatically generate one-time use and expiring coupon codes when your visitor opts-in and send the code to them through an Infusionsoft email. Segment customers based on the coupon codes they have used, and track your ROI of each coupon code.&#xD;
-Field to Field Sync &#xD;
-Sync virtually any native Magento field into a field in Infusionsoft.&#xD;
-Order Status Automation &#xD;
-Easily run campaigns based on a change in your order status. For instance, run a campaign when an order is initially placed, or when an order is shipped, canceled or refunded.&#xD;
-Support for Multiple Stores &#xD;
-Do you sell on more than one Magento storefront? Do you want to connect each store to a single Infusionsoft app? We can help. Each store will need its own Revenue Conduit app, and you will be able to segment based each individual store within Infusionsoft.&#xD;
-More Features Added Every Few Weeks &#xD;
-We&#x2019;re constantly innovating and listening to our customers for feature suggestions. Have an idea? Let us know and we&#x2019;ll see what we can do for you.&#xD;
-Interested in a demo? Visit wwww.revenueconduit.com/magento to learn more.</summary>
-    <description>Infusionsoft and Magento Integration by Revenue Conduit&#xD;
-Sign up for a 14 day FREE Trial and see what Revenue Conduit can do for you. Then benefit from a low monthly cost starting at $49.95 with no up-front fees or long-term commitments.&#xD;
+    <summary>&lt;p&gt;&lt;h2&gt;Revenue Conduit for HubSpot or Infusionsoft&lt;/h2&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;a href="http://revenueconduit.com/"&gt;Revenue Conduit&lt;/a&gt; integrates Magento with &lt;a href="http://hubspot.com"&gt;HubSpot&lt;a&gt; or &lt;a href="http://infusionsoft.com"&gt;Infusionsoft &lt;/a&gt;. Revenue Conduit includes the infrastructure you need to implement and get value out of your marketing platform, fast. When you sign up for a free trial, we'll automatically add 12 Workflows and 13+ Smart Lists to your HubSpot app. For Infusionsoft we will add 6 campaigns, custom fields, Tags, saved searches and dashboard widgets. The workflows in HubSpot and campaigns in Infusionsoft will allow you to automatically welcome new customers, re-engage existing customers who haven't bought in a while and take many other actions that will help you attract, convert and retain customers resulting in revenue growth. We'll even move all your historical data from your shopping cart into your marketing platform for free.&lt;/p&gt;&#xD;
 &#xD;
-Grow your Magento store, Automatically&#xD;
-Benefit from a complete marketing system when you connect your Magento store to Infusionsoft through Revenue Conduit</description>
-    <notes>Now also supports single step checkouts, multiple store fronts</notes>
+&lt;p&gt;&lt;a href="http://app.revenueconduit.com/#/signup"&gt;Sign up&lt;/a&gt; for a 14 day FREE Trial and see what Revenue Conduit can do for you. Then benefit from a low monthly cost starting at &lt;b&gt;$49.95&lt;/b&gt; with no up-front fees or long-term commitments.&lt;/p&gt;&#xD;
+&#xD;
+&#xD;
+&lt;p&gt;Visit our &lt;a href="http://revenueconduit.com"&gt;website&lt;/a&gt; to learn more about Revenue Conduit and why signing up for HubSpot or Infusionsoft through us is in your best interest. We have worked with hundreds of online retailers and know how to help you implement your marketing platform to quickly earn an ROI. &lt;/p&gt;&#xD;
+&#xD;
+&#xD;
+&lt;p&gt;&lt;h2&gt;Feature-Packed and Full of Benefits&lt;/h2&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Grow your Magento store, Automatically&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Benefit from a complete marketing system when you connect your Magento store to HubSpot or Infusionsoft through Revenue Conduit.&lt;/p&gt;    &#xD;
+    &#xD;
+&lt;p&gt;&lt;b&gt;Deep Data Sync&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Revenue Conduit offers the deepest integration available. We sync data to 100+ custom properties in HubSpot, enabling you to properly segment your customers and automate customer lifecycle marketing. Here&#x2019;s a sample of some of the fields we sync:&lt;/p&gt;&#xD;
+&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Total Value of Orders&lt;/li&gt;&#xD;
+&#xD;
+&lt;li&gt;Total Number of Orders&lt;/li&gt;&#xD;
+&#xD;
+&lt;li&gt;Date of Last Order&lt;/li&gt;&#xD;
+&#xD;
+&lt;li&gt;Average Days Between Orders&lt;/li&gt;&#xD;
+&#xD;
+&lt;li&gt;All Products Bought&lt;/li&gt;&#xD;
+&#xD;
+&lt;li&gt;Last Products Bought&lt;/li&gt;&#xD;
+&#xD;
+&lt;li&gt;All Categories Bought&lt;/li&gt;&#xD;
+&#xD;
+&lt;li&gt;Last Categories Bought&lt;/li&gt;&#xD;
+&#xD;
+&lt;li&gt;And many more&#x2026;&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;p&gt; Incase of infusionsoft, since there is a limitation on the number of custom fields we can create, we sync all the important properties which yeild the maximum actionable data. &lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Shopping Cart Abandonment Marketing&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Automatically recover abandoned shopping carts through a powerful, customizable workflows or campaigns. Check your data - it&#x2019;s likely that upwards of 70% of your carts are abandoned. Now, with Revenue Conduit, you can automatically recover more lost carts to grow your top and bottom line. Include your product pictures, cart items and details in the email. Configure the workflow to provide a coupon code every time your customer abandons a cart, or protect yourself from your customers gaming the system and only deliver a coupon code every other or every third time.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Dynamic Coupon Code Generation&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Automatically create single-use and expiring coupon codes on the fly and send them to a lead or customer.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Product Browse Abandonment and Visitor Behavior Segmentation&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Revenue Conduit syncs HubSpot&#x2019;s website behavior tracking data on all your customers and Marketing Qualified Leads, making it easy to segment and automate based on the products, categories and pages your leads and customers have viewed.&#xD;
+&#xD;
+&lt;p&gt; This feature is not available in Infusinosoft yet&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Detailed Product and Category Purchase History&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Easily segment based on products and categories purchased using Smart Lists in HubSpot which can be accessible in any workflow.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Infusionsoft uses Tags to segment customers based on what they bought, what they are interested in and how engaged they are. With Revenue Conduit, you can associate any number of Tags to any of your products and product categories, allowing you to easily segment your customers based on their buying behaviors and interests. Why would you want to do this? Think automatic upsell and cross-sell campaigns.&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;b&gt;RFM Segmentation&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Your customers are not created equal. Some are worth a lot, and some are likely worth very little. Once your historical data is in Infusionsoft or HubSpot easily segment your customers based on the last time they bought, how many times they bought and how much they have spent over their lifetime.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Order Automation&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Automate HubSpot workflows around the status of an order.&lt;/p&gt;&#xD;
+&lt;p&gt;Automatically start one or more Infusionsoft campaigns when a customer places an order. &lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Support for Multiple Stores&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Do you sell on more than one Magento storefront? Do you want to connect each store to a single HubSpot or Infusionsoft? We can help. Each store will need its own Revenue Conduit app, and you will be able to segment based each individual store within your marketing platform.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Workflow ROI Tracking&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;See how much revenue your workflows and campaigns generate and track your return on investment.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Customer Group Sync&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Revenue Conduit syncs your customer group to HubSpot or Infusionsoft, allowing you to have specific follow up for Retail, Wholesale, and any other customized Magento customer groups in your business.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&#xD;
+    &lt;strong&gt;Referral Partner Integration&lt;/strong&gt;&#xD;
+&lt;/p&gt;&#xD;
+&lt;p&gt;&#xD;
+    Infusionsoft includes a powerful referral partner system that allows you to&#xD;
+    build and manage a referral partner program that compensates your partners&#xD;
+    for sales they help you generate. Revenue Conduit makes it possible for you&#xD;
+    to sell on your Magento store and track sales and commissions in&#xD;
+    Infusionsoft.&#xD;
+&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;This feature is not available in HubSpot.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Newsletter Subscription Sync&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Add customer to designated workflows and workflows when a customer opts into marketing.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Add customer to designated campaigns using a tag we apply when a customer opts into marketing.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;Field to Field Sync&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Need more than our default properties? Sync virtually any native Magento field into a field in HubSpot or Infusionsoft.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;&lt;b&gt;More Features Added Every Few Weeks&lt;/b&gt;&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;We&#x2019;re constantly innovating and listening to our customers for feature suggestions. Have an idea? Let us know at &lt;a href="mailto:support@revenueconduit.com"&gt;support@revenueconduit.com&lt;/a&gt; and we&#x2019;ll see what we can do for you.&lt;/p&gt;&#xD;
+&#xD;
+&lt;b&gt;Interested in a demo? &lt;/b&gt;&#xD;
+&lt;p&gt;Visit &lt;b&gt;&lt;a href="http://revenueconduit.com/hubspot/magento"&gt;revenueconduit.com/hubspot/magento/&lt;/a&gt;&lt;/b&gt; to learn more about our HubSpot integration.&lt;/p&gt;&#xD;
+&lt;p&gt;Visit &lt;b&gt;&lt;a href="http://revenueconduit.com/magento"&gt;revenueconduit.com/magento/&lt;/a&gt;&lt;/b&gt; to learn more about our Infusionsoft integration.&lt;/p&gt;</summary>
+    <description>Featured HubSpot integration and voted #1 app for Infusionsoft. Grow your online store, automatically</description>
+    <notes>This extension supports abandoned cart feature for fire checkout, single page checkout and integration of multiple store fronts into the same marketing Infusionsoft or HubSpot account. </notes>
     <authors><author><name>RevenueConduit</name><user>RevenueConduit</user><email>support@revenueconduit.com</email></author></authors>
-    <date>2017-03-21</date>
-    <time>12:20:24</time>
+    <date>2017-03-24</date>
+    <time>06:07:26</time>
     <contents><target name="magecommunity"><dir name="RevenueConduit"><dir name="RevenueConduit"><dir name="Helper"><file name="Data.php" hash="0a9af814ed12bb85b1be2b0cdff4c864"/></dir><dir name="Model"><dir name="Catalog"><dir name="Product"><dir name="Api"><file name="V2.php" hash="08cea5d6c1a35dffd185677aeec60306"/></dir></dir></dir><dir name="Customer"><dir name="Customer"><dir name="Api"><file name="V2.php" hash="fd835f965fd45b7bfccdb91b0a7bb90e"/></dir></dir></dir><file name="Observer.php" hash="07f339a9959096c4bd40cbaad99f2355"/><dir name="Sales"><dir name="Order"><dir name="Api"><dir name="1.6"><file name="V2.php" hash="7158678bb9e973b72091290218cadc36"/></dir><file name="V2.php" hash="2ff422d550dec4bb1258d31f06a817bb"/></dir></dir></dir></dir><dir name="controllers"><file name="IndexController.php" hash="35003c5a8ab78a359bf0f114180a6741"/></dir><dir name="etc"><file name="api.xml" hash="83ff3cb817751a0c40cbbfcb0e3df17e"/><file name="config.xml" hash="89d7a21e5b3838fabeb5490472b6e7a2"/><file name="system.xml" hash="357e5c0b20a346777a2b49e219e26102"/><file name="wsdl.xml" hash="053d171231a969b5f288c2af01abd00f"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="RevenueConduit_RevenueConduit.xml" hash="8f594907ef70890af5f90fc16dd59ca7"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
