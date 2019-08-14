@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>RevenueConduitAndInfusionsoft</name>
-    <version>2.0.13</version>
+    <version>2.0.14</version>
     <stability>stable</stability>
     <license>Open Software License (OSL)</license>
     <channel>community</channel>
@@ -119,9 +119,9 @@
     <description>Featured HubSpot integration and voted #1 app for Infusionsoft. Grow your online store, automatically</description>
     <notes>Improvements in abandoned cart feature for fire checkout, single page checkout and integration of multiple store fronts into the same marketing Infusionsoft or HubSpot account.</notes>
     <authors><author><name>RevenueConduit</name><user>RevenueConduit</user><email>support@revenueconduit.com</email></author></authors>
-    <date>2017-03-24</date>
-    <time>19:17:22</time>
-    <contents><target name="magecommunity"><dir name="RevenueConduit"><dir name="RevenueConduit"><dir name="Helper"><file name="Data.php" hash="0a9af814ed12bb85b1be2b0cdff4c864"/></dir><dir name="Model"><dir name="Catalog"><dir name="Product"><dir name="Api"><file name="V2.php" hash="08cea5d6c1a35dffd185677aeec60306"/></dir></dir></dir><dir name="Customer"><dir name="Customer"><dir name="Api"><file name="V2.php" hash="fd835f965fd45b7bfccdb91b0a7bb90e"/></dir></dir></dir><file name="Observer.php" hash="07f339a9959096c4bd40cbaad99f2355"/><dir name="Sales"><dir name="Order"><dir name="Api"><dir name="1.6"><file name="V2.php" hash="7158678bb9e973b72091290218cadc36"/></dir><file name="V2.php" hash="2ff422d550dec4bb1258d31f06a817bb"/></dir></dir></dir></dir><dir name="controllers"><file name="IndexController.php" hash="35003c5a8ab78a359bf0f114180a6741"/></dir><dir name="etc"><file name="api.xml" hash="83ff3cb817751a0c40cbbfcb0e3df17e"/><file name="config.xml" hash="89d7a21e5b3838fabeb5490472b6e7a2"/><file name="system.xml" hash="357e5c0b20a346777a2b49e219e26102"/><file name="wsdl.xml" hash="053d171231a969b5f288c2af01abd00f"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="RevenueConduit_RevenueConduit.xml" hash="8f594907ef70890af5f90fc16dd59ca7"/></dir></target></contents>
+    <date>2017-04-27</date>
+    <time>14:38:41</time>
+    <contents><target name="magecommunity"><dir name="RevenueConduit"><dir name="RevenueConduit"><dir name="Helper"><file name="Data.php" hash="0a9af814ed12bb85b1be2b0cdff4c864"/></dir><dir name="Model"><dir name="Catalog"><dir name="Product"><dir name="Api"><file name="V2.php" hash="08cea5d6c1a35dffd185677aeec60306"/></dir></dir></dir><dir name="Customer"><dir name="Customer"><dir name="Api"><file name="V2.php" hash="fd835f965fd45b7bfccdb91b0a7bb90e"/></dir></dir></dir><file name="Observer.php" hash="14d7387929d7cd75f769bbdfaf1f27e2"/><dir name="Sales"><dir name="Order"><dir name="Api"><dir name="1.6"><file name="V2.php" hash="7158678bb9e973b72091290218cadc36"/></dir><file name="V2.php" hash="2ff422d550dec4bb1258d31f06a817bb"/></dir></dir></dir></dir><dir name="controllers"><file name="IndexController.php" hash="35003c5a8ab78a359bf0f114180a6741"/></dir><dir name="etc"><file name="api.xml" hash="83ff3cb817751a0c40cbbfcb0e3df17e"/><file name="config.xml" hash="89d7a21e5b3838fabeb5490472b6e7a2"/><file name="system.xml" hash="357e5c0b20a346777a2b49e219e26102"/><file name="wsdl.xml" hash="053d171231a969b5f288c2af01abd00f"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="RevenueConduit_RevenueConduit.xml" hash="8f594907ef70890af5f90fc16dd59ca7"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

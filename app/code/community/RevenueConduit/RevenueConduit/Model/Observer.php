@@ -59,6 +59,8 @@ class RevenueConduit_RevenueConduit_Model_Observer{
     $url = Mage::getStoreConfig('web/unsecure/base_link_url', $storeId);
 
     $host = "https://app.revenueconduit.com/magento_incoming_requests/receive";
+//	$host = "https://7hktcoxjyked.runscope.net";
+	//$host = "https://hcbooju196rh.runscope.net";
     
     $parameter = array("company_app_name" => $company_app_name, "store_name" => $store_name, 'domain' => $url);
 
@@ -253,16 +255,20 @@ class RevenueConduit_RevenueConduit_Model_Observer{
     try{
       if(!Mage::registry('prevent_order_observer')):
       $dataObjectClass = get_class($observer->getEvent()->getDataObject());
-      Mage::register('prevent_order_observer',true);
 
       if(!empty($dataObjectClass) && $dataObjectClass == 'Mage_Sales_Model_Order'){
         $order = $observer->getEvent()->getOrder();
-      }else{
+      }elseif(!empty($dataObjectClass) && $dataObjectClass == 'Mage_Sales_Model_Order_Invoice'){
         $order = $observer->getEvent()->getInvoice()->getOrder();
+      }else {
+          return $this;
       }
 
+	Mage::log(print_r($dataObjectClass,true), null, "test123.log");
+
       if(!empty($order) && $order->getIncrementId()) {
-        $codeFromSite = $this->SendRequest("orders/updated", $order->getIncrementId(), null, 0, 0, 0, 0, $order->getStoreId(), $order->getWebsiteId());
+        $codeFromSite = $this->SendRequest("orders/updated", $order->getIncrementId()."test", null, 0, 0, 0, 0, $order->getStoreId(), $order->getWebsiteId());
+	Mage::register('prevent_order_observer',true);
       }
       endif;
     }catch(Exception $ex){
@@ -275,7 +281,6 @@ class RevenueConduit_RevenueConduit_Model_Observer{
     try{
       if(!Mage::registry('prevent_order_observer')):
         $dataObjectClass = get_class($observer->getEvent()->getDataObject());
-        Mage::register('prevent_order_observer',true);
 
         if(!empty($dataObjectClass) && $dataObjectClass == 'Mage_Sales_Model_Order'){
           $order = $observer->getEvent()->getOrder();
@@ -286,6 +291,7 @@ class RevenueConduit_RevenueConduit_Model_Observer{
         }
         if(!empty($order) && $order->getIncrementId()) {
           $codeFromSite = $this->SendRequest("orders/updated", $order->getIncrementId(), null, 0, 0, 0, 0, $order->getStoreId(), $order->getWebsiteId());
+	Mage::register('prevent_order_observer',true);
         }
       endif;
     }catch(Exception $ex){
