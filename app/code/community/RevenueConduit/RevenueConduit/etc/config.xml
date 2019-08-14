@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <RevenueConduit_RevenueConduit>
+      <version>1.0.2</version>
+      <depends>
+        <Mage_Catalog />
+        <Mage_Customer />
+      </depends>
+    </RevenueConduit_RevenueConduit>
+  </modules>
+<frontend>
+       <routers>
+            <revenueconduit>
+                <use>standard</use>
+                <args>
+                    <module>RevenueConduit_RevenueConduit</module>
+                    <frontName>revenueconduit</frontName>
+                </args>
+            </revenueconduit>
+       </routers>
+</frontend>
+  <global>
+    <models>        
+        <revenueconduit>
+            <class>RevenueConduit_RevenueConduit_Model</class>              
+        </revenueconduit>       
+        <catalog>
+                <rewrite>
+                        <product_api_v2>RevenueConduit_RevenueConduit_Model_Catalog_Product_Api_V2</product_api_v2>
+                </rewrite>
+        </catalog>
+        <customer>
+                <rewrite>
+                        <customer_api_v2>RevenueConduit_RevenueConduit_Model_Customer_Customer_Api_V2</customer_api_v2>
+                </rewrite>
+        </customer>
+    </models>  
+    <helpers>
+      <revenueconduit>
+        <class>RevenueConduit_RevenueConduit_Helper</class>
+      </revenueconduit>
+    </helpers>
+    <events>
+ <sales_convert_quote_to_order>
+            <observers>
+                <checkouts_delete>
+                    <type>singleton</type>
+                    <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+                    <method>checkoutsDelete</method>
+                </checkouts_delete>
+            </observers>
+ </sales_convert_quote_to_order>
+ <controller_action_postdispatch_checkout_onepage_saveBilling>
+            <observers>
+                <auto_register_shipping>
+                    <type>singleton</type>
+                    <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+                    <method>autoRegisterBilling</method>
+                </auto_register_shipping>
+            </observers>
+ </controller_action_postdispatch_checkout_onepage_saveBilling>
+      <catalog_product_save_after>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>UpdateProduct</method>
+          </revenueconduit_RevenueConduit_customer_observer>
+        </observers>
+      </catalog_product_save_after>
+      <catalog_product_save_before>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>beforeSave</method>
+          </revenueconduit_RevenueConduit_customer_observer>
+        </observers>
+      </catalog_product_save_before>
+      <catalog_category_save_before>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>beforeCategorySave</method>
+          </revenueconduit_RevenueConduit_customer_observer>
+        </observers>
+      </catalog_category_save_before>      
+      <catalog_category_save_after>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>UpdateCategory</method>
+          </revenueconduit_RevenueConduit_customer_observer>
+        </observers>
+      </catalog_category_save_after>
+      <customer_save_before>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>beforeCustomerSave</method>
+          </revenueconduit_RevenueConduit_customer_observer>
+        </observers>
+      </customer_save_before>
+      <customer_save_after>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>UpdateCustomer</method>
+          </revenueconduit_RevenueConduit_customer_observer>
+        </observers>
+      </customer_save_after>
+      <catalog_product_duplicate>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>UpdateProduct</method>
+          </revenueconduit_RevenueConduit_customer_observer>
+        </observers>
+      </catalog_product_duplicate>      
+      <customer_register_success>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>CreateContactRecord</method>
+          </revenueconduit_RevenueConduit_customer_observer>
+        </observers>
+      </customer_register_success>
+      <sales_order_place_after>
+        <observers>
+          <revenueconduit_RevenueConduit_customer_observer_a>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>AssignOrderSequenceOnCheckout</method>
+          </revenueconduit_RevenueConduit_customer_observer_a>
+        </observers>
+      </sales_order_place_after>
+      <sales_order_invoice_pay>
+        <observers>
+          <revenueconduit_RevenueConduit_order_saved>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>OnOrderUpdate</method>
+          </revenueconduit_RevenueConduit_order_saved>
+        </observers>
+      </sales_order_invoice_pay>
+      <sales_order_shipment_save_after>
+        <observers>
+          <revenueconduit_RevenueConduit_order_saved>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>salesOrderShipmentSaveAfter</method>
+          </revenueconduit_RevenueConduit_order_saved>
+        </observers>
+      </sales_order_shipment_save_after>
+      <sales_order_save_after>
+        <observers>
+          <revenueconduit_RevenueConduit_order_saved>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>salesOrderHoldChange</method>
+          </revenueconduit_RevenueConduit_order_saved>
+        </observers>
+      </sales_order_save_after>
+      <sales_order_save_commit_after>
+        <observers>
+          <revenueconduit_RevenueConduit_order_saved>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>OnOrderUpdate</method>
+          </revenueconduit_RevenueConduit_order_saved>
+        </observers>
+      </sales_order_save_commit_after>
+      <controller_front_init_before>
+        <observers>
+          <revenueconduit_RevenueConduit_order_saved>
+            <type>singleton</type>
+            <class>RevenueConduit_RevenueConduit_Model_Observer</class>
+            <method>captureReferral</method>
+          </revenueconduit_RevenueConduit_order_saved>
+        </observers>
+      </controller_front_init_before>      
+    </events>
+  </global>
+  <adminhtml>
+    <acl>
+      <resources>
+        <admin>
+          <children>
+            <system>
+              <children>
+                <config>
+                  <children>
+                    <revenueconduit_revenueconduit_options>
+                      <title>RevenueConduit Infusionsoft Settings Section</title>
+                    </revenueconduit_revenueconduit_options>
+                  </children>
+                </config>
+              </children>
+            </system>
+          </children>
+        </admin>
+      </resources>
+    </acl>
+  </adminhtml>
+</config>
+<!-- 
+/**
+ * RevenueConduit
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA available
+ * through the world-wide-web at this URL:
+ * http://revenueconduit.com/magento/license
+ *
+ * MAGENTO EDITION USAGE NOTICE
+ *
+ * This package is designed for Magento COMMUNITY edition.
+ * =================================================================
+ *
+ * @package    RevenueConduit
+ * @copyright  Copyright (c) 2012-2013 RevenueConduit. (http://www.revenueconduit.com)
+ * @license    http://revenueconduit.com/magento/license
+ * @terms      http://revenueconduit.com/magento/terms
+ * @author     Parag Jagdale
+ */
+-->

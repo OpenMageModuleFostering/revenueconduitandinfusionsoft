@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:typens="urn:{{var wsdl.name}}" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/"
+    name="{{var wsdl.name}}" targetNamespace="urn:{{var wsdl.name}}">
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:Magento">
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/" schemaLocation="http://schemas.xmlsoap.org/soap/encoding/" />
+            <complexType name="RevenueConduit_salesOrderListEntity">
+                <all>
+                    <element name="increment_id" type="xsd:string" minOccurs="0" />
+                    <element name="store_id" type="xsd:string" minOccurs="0" />
+                    <element name="created_at" type="xsd:string" minOccurs="0" />
+                    <element name="updated_at" type="xsd:string" minOccurs="0" />
+                    <element name="customer_id" type="xsd:string" minOccurs="0" />
+                    <element name="status" type="xsd:string" minOccurs="0" />
+                    <element name="state" type="xsd:string" minOccurs="0" />
+                    <element name="order_id" type="xsd:string" minOccurs="0" />
+                </all>
+            </complexType>
+            <complexType name="RevenueConduit_salesOrderListEntityArray">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="typens:RevenueConduit_salesOrderListEntity[]" />
+                    </restriction>
+                </complexContent>
+            </complexType>
+<!-- For Card 99 - generate coupons -->
+	<complexType name="RevenueConduit_generateCouponEntity">
+                <all>
+                </all>
+	</complexType>
+	<complexType name="RevenueConduit_generateCouponEntityArray">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="typens:RevenueConduit_generateCouponEntity[]" />
+                    </restriction>
+                </complexContent>
+	</complexType>
+	<complexType name="RevenueConduit_salesOrderIdListEntity">
+                <all>
+                </all>
+	</complexType>
+	<complexType name="RevenueConduit_salesOrderIdListEntityArray">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="typens:RevenueConduit_salesOrderIdListEntity[]" />
+                    </restriction>
+                </complexContent>
+	</complexType>
+        </schema>
+    </types>
+<!-- For Card 99 - generate coupons -->
+<message name="RevenueConduit_generateCouponRequest">
+        <part name="sessionId" type="xsd:string" />
+        <part name="filters" type="typens:filters" />
+</message>
+<message name="RevenueConduit_generateCouponResponse">
+        <part name="result" type="typens:generateCouponEntityArray" />
+</message>
+    <message name="RevenueConduit_salesOrderListRequest">
+        <part name="sessionId" type="xsd:string" />
+        <part name="filters" type="typens:filters" />
+    </message>
+    <message name="RevenueConduit_salesOrderListResponse">
+        <part name="result" type="typens:salesOrderListEntityArray" />
+    </message>
+    <message name="RevenueConduit_salesOrderIdListRequest">
+        <part name="sessionId" type="xsd:string" />
+        <part name="filters" type="typens:filters" />
+    </message>
+    <message name="RevenueConduit_salesOrderIdListResponse">
+        <part name="result" type="typens:salesOrderIdListEntityArray" />
+    </message>
+    <message name="RevenueConduit_salesOrderCountRequest">
+        <part name="sessionId" type="xsd:string" />
+        <part name="filters" type="typens:filters" />
+    </message>
+    <message name="RevenueConduit_salesOrderCountResponse">
+        <part name="result" type="xsd:int" />
+    </message>
+    <message name="RevenueConduit_salesOrderInputEmail">
+        <part name="sessionId" type="xsd:string" />
+        <part name="filters" type="xsd:string" />
+    </message>
+    <portType name="{{var wsdl.handler}}PortType">
+	<!-- For Card 99 - generate coupons -->
+	<operation name="RevenueConduit_generateCoupon">
+		    <documentation>Generate coupon code</documentation>
+		    <input message="typens:RevenueConduit_generateCouponRequest" />
+		    <output message="typens:RevenueConduit_generateCouponResponse" />
+	</operation>
+        <operation name="RevenueConduit_salesOrderList">
+            <documentation>Retrieve list of orders by filters</documentation>
+            <input message="typens:RevenueConduit_salesOrderListRequest" />
+            <output message="typens:RevenueConduit_salesOrderListResponse" />
+        </operation>
+	<operation name="RevenueConduit_salesOrderIdList">
+            <documentation>Retrieve list of order numbers by filters</documentation>
+            <input message="typens:RevenueConduit_salesOrderIdListRequest" />
+            <output message="typens:RevenueConduit_salesOrderIdListResponse" />
+        </operation>
+        <operation name="RevenueConduit_salesOrderCount">
+            <documentation>Retrieve count of orders by filters</documentation>
+            <input message="typens:RevenueConduit_salesOrderCountRequest" />
+            <output message="typens:RevenueConduit_salesOrderCountResponse" />
+        </operation>
+        <operation name="RevenueConduit_customerCustomerCount">
+            <documentation>Retrieve count of customers by filters</documentation>
+            <input message="typens:RevenueConduit_salesOrderCountRequest" />
+            <output message="typens:RevenueConduit_salesOrderCountResponse" />
+        </operation>
+        <operation name="RevenueConduit_catalogProductCount">
+            <documentation>Retrieve count of products by filters</documentation>
+            <input message="typens:RevenueConduit_salesOrderCountRequest" />
+            <output message="typens:RevenueConduit_salesOrderCountResponse" />
+        </operation>	
+        <operation name="RevenueConduit_catalogCategoryCount">
+            <documentation>Retrieve count of Categories by filters</documentation>
+            <input message="typens:RevenueConduit_salesOrderCountRequest" />
+            <output message="typens:RevenueConduit_salesOrderCountResponse" />
+        </operation>	
+        <operation name="RevenueConduit_customerIsSubscribed">
+            <documentation>Check if customer has subscribed to newsletters</documentation>
+            <input message="typens:RevenueConduit_salesOrderInputEmail" />
+            <output message="typens:RevenueConduit_salesOrderCountResponse" />
+        </operation>	
+    </portType>
+    <binding name="{{var wsdl.handler}}Binding" type="typens:{{var wsdl.handler}}PortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+	<!-- For Card 99 - generate coupons -->
+	<operation name="RevenueConduit_generateCoupon">
+		    <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+		    <input>
+			<soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		    </input>
+		    <output>
+			<soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+		    </output>
+	</operation>
+        <operation name="RevenueConduit_salesOrderList">
+            <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+            <input>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+	<operation name="RevenueConduit_salesOrderIdList">
+            <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+            <input>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+        <operation name="RevenueConduit_salesOrderCount">
+            <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+            <input>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+        <operation name="RevenueConduit_customerCustomerCount">
+            <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+            <input>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+        <operation name="RevenueConduit_catalogProductCount">
+            <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+            <input>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>	
+        <operation name="RevenueConduit_catalogCategoryCount">
+            <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+            <input>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>	
+        <operation name="RevenueConduit_customerIsSubscribed">
+            <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+            <input>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>	
+    </binding>
+    <service name="{{var wsdl.name}}Service">
+        <port name="{{var wsdl.handler}}Port" binding="typens:{{var wsdl.handler}}Binding">
+            <soap:address location="{{var wsdl.url}}" />
+        </port>
+    </service>
+</definitions>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<package>
+    <name>RevenueConduitAndInfusionsoft</name>
+    <version>2.0.11</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Infusionsoft and Magento Integration by Revenue Conduit&#xD;
+Sign up for a 14 day FREE Trial and see what Revenue Conduit can do for you. Then benefit from a low monthly cost starting at $49.95 with no up-front fees or long-term commitments.&#xD;
+Grow your Magento store, Automatically&#xD;
+Benefit from a complete marketing system when you connect your Magento store to Infusionsoft through Revenue Conduit&#xD;
+Feature-Packed and Full of Benefits&#xD;
+Complimentary Full Historical Sync &amp; Real Time 80/20 Statistics&#xD;
+Shortly after connecting Revenue Conduit to Infusionsoft and your shopping cart, we&#x2019;ll build the required fields and start syncing your historical customer and order data. We also enable the real time 80/20 analysis through which you always look for &#x201C;low-hanging fruit&#x201D; campaigns that offer a relatively easy and immediate source of revenue and profit.&#xD;
+Shopping Cart Abandonment Marketing &#xD;
+Automatically recover abandoned shopping carts through a powerful, customizable Infusionsoft campaign. Check your data - it&#x2019;s likely that upwards of 70% of your carts are abandoned. Now, with Revenue Conduit, you can automatically recover more lost carts to grow your top and bottom line. Include your product pictures, cart items and details in a multi-step email campaign. Configure the campaign to provide a coupon code every time your customer abandons a cart, or protect yourself from your customers gaming the system and only deliver a coupon code every other or every third time.&#xD;
+Order Automation &#xD;
+Automatically start one or more Infusionsoft campaigns when a customer places an order&#xD;
+Sync Customers, Orders and Products &#xD;
+As your customers buy, Revenue Conduit automatically syncs all your customers, orders and products to the Infusionsoft CRM system.&#xD;
+Associate Tags to Products and Categories &#xD;
+Infusionsoft uses Tags to segment customers based on what they bought, what they are interested in and how engaged they are. With Revenue Conduit, you can associate any number of Tags to any of your products and product categories, allowing you to easily segment your customers based on their buying behaviors and interests. Why would you want to do this? Think automatic upsell and cross-sell campaigns.&#xD;
+6 Free Infusionsoft Campaigns &#xD;
+Revenue Conduit is not just an integration. We provide a Marketing System for online retailers. Within 24 to 48 hours after you sign up for our Free Marketing System, Revenue Conduit will install 6 campaigns, custom fields, Tags, saved searches and dashboard widgets into your Infusionsoft app. Revenue Conduit was co-founded by Daniel Kurt, an Infusionsoft Certified Consultant with ecommerce expertise and the Marketing System is worth thousands of dollars. You get it for FREE when you sign up for a 30-day free trial.&#xD;
+RFM Segmentation &#xD;
+This one feature alone can provide you with a return on your investment in Revenue Conduit and Infusionsoft. Automatically segment your customers based on the last time they bought, how many times they bought and how much they have spent. Using data that Revenue Conduit calculates prior to syncing your customer after they place an order, your customers will be given a 1-5 rating for Order Recency, Order Frequency and Monetary. This is called RFM Segmentation. The big ecommerce companies use it, and now you can, too!&#xD;
+Campaign ROI Tracking &#xD;
+As part of our Marketing System, you can easily see how much revenue your campaigns generate and track your return on investment. We even build Infusionsoft Dashboard Widgets that show you the ROI and other vital metrics from the 6 Infusionsoft campaigns that come with Revenue Conduit.&#xD;
+Referral Partner Integration &#xD;
+Infusionsoft includes a powerful referral partner system that allows you to build and manage a referral partner program that compensates your partners for sales they help you generate. Revenue Conduit makes it possible for you to sell on your Magento store and track sales and commissions in Infusionsoft.&#xD;
+Newsletter Opt-in &#xD;
+If your customer opts-in to your marketing during checkout, Revenue Conduit will apply your Newsletter Tag to their contact record. Whether or not you use this feature, Revenue Conduit syncs all customers to Infusionsoft as marketable.&#xD;
+Customer Group Sync &#xD;
+Revenue Conduit syncs your customer group to Infusionsoft, allowing you to have specific follow up for Retail, Wholesale, and any other customized Magento customer groups in your business.&#xD;
+Coupon Code Generation, Sync and Automation &#xD;
+Automatically generate one-time use and expiring coupon codes when your visitor opts-in and send the code to them through an Infusionsoft email. Segment customers based on the coupon codes they have used, and track your ROI of each coupon code.&#xD;
+Field to Field Sync &#xD;
+Sync virtually any native Magento field into a field in Infusionsoft.&#xD;
+Order Status Automation &#xD;
+Easily run campaigns based on a change in your order status. For instance, run a campaign when an order is initially placed, or when an order is shipped, canceled or refunded.&#xD;
+Support for Multiple Stores &#xD;
+Do you sell on more than one Magento storefront? Do you want to connect each store to a single Infusionsoft app? We can help. Each store will need its own Revenue Conduit app, and you will be able to segment based each individual store within Infusionsoft.&#xD;
+More Features Added Every Few Weeks &#xD;
+We&#x2019;re constantly innovating and listening to our customers for feature suggestions. Have an idea? Let us know and we&#x2019;ll see what we can do for you.&#xD;
+Interested in a demo? Visit wwww.revenueconduit.com/magento to learn more.</summary>
+    <description>Infusionsoft and Magento Integration by Revenue Conduit&#xD;
+Sign up for a 14 day FREE Trial and see what Revenue Conduit can do for you. Then benefit from a low monthly cost starting at $49.95 with no up-front fees or long-term commitments.&#xD;
+&#xD;
+Grow your Magento store, Automatically&#xD;
+Benefit from a complete marketing system when you connect your Magento store to Infusionsoft through Revenue Conduit</description>
+    <notes>Now also supports single step checkouts, multiple store fronts</notes>
+    <authors><author><name>RevenueConduit</name><user>RevenueConduit</user><email>support@revenueconduit.com</email></author></authors>
+    <date>2017-03-21</date>
+    <time>12:20:24</time>
+    <contents><target name="magecommunity"><dir name="RevenueConduit"><dir name="RevenueConduit"><dir name="Helper"><file name="Data.php" hash="0a9af814ed12bb85b1be2b0cdff4c864"/></dir><dir name="Model"><dir name="Catalog"><dir name="Product"><dir name="Api"><file name="V2.php" hash="08cea5d6c1a35dffd185677aeec60306"/></dir></dir></dir><dir name="Customer"><dir name="Customer"><dir name="Api"><file name="V2.php" hash="fd835f965fd45b7bfccdb91b0a7bb90e"/></dir></dir></dir><file name="Observer.php" hash="07f339a9959096c4bd40cbaad99f2355"/><dir name="Sales"><dir name="Order"><dir name="Api"><dir name="1.6"><file name="V2.php" hash="7158678bb9e973b72091290218cadc36"/></dir><file name="V2.php" hash="2ff422d550dec4bb1258d31f06a817bb"/></dir></dir></dir></dir><dir name="controllers"><file name="IndexController.php" hash="35003c5a8ab78a359bf0f114180a6741"/></dir><dir name="etc"><file name="api.xml" hash="83ff3cb817751a0c40cbbfcb0e3df17e"/><file name="config.xml" hash="89d7a21e5b3838fabeb5490472b6e7a2"/><file name="system.xml" hash="357e5c0b20a346777a2b49e219e26102"/><file name="wsdl.xml" hash="053d171231a969b5f288c2af01abd00f"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="RevenueConduit_RevenueConduit.xml" hash="8f594907ef70890af5f90fc16dd59ca7"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

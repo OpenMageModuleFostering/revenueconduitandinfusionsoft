@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    RevenueConduit
+ * @package     RevenueConduit_Sales
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+    <api>
+        <resources>
+            <revenueconduit_sales translate="title" module="revenueconduit">
+                <title>revenueconduit</title>
+                <model>RevenueConduit_RevenueConduit_Model_Sales_Order_Api</model>
+                <acl>revenueconduit_sales/order</acl>
+                <methods>
+			<!-- For Card 99 - generate coupons -->
+			<_generateCoupon translate="title" module="revenueconduit">
+				 <title>Generate a coupon</title>
+				 <method>generate_coupon</method>
+				 <acl>revenueconduit_sales/order</acl>
+			</_generateCoupon>
+                    <_salesOrderList translate="title" module="revenueconduit">
+                        <title>Retrieve list of orders by filters</title>
+                        <method>light_items</method>
+                        <acl>revenueconduit_sales/order</acl>
+                    </_salesOrderList>
+		    <_salesOrderIdList translate="title" module="revenueconduit">
+                        <title>Retrieve list of order numbers by filters</title>
+                        <method>listOfOrderNumbers</method>
+                        <acl>revenueconduit_sales/order</acl>
+                    </_salesOrderIdList>
+                    <_salesOrderCount translate="title" module="revenueconduit">
+                        <title>Retrieve count of orders</title>
+                        <method>order_count</method>
+                        <acl>revenueconduit_sales/order</acl>
+                    </_salesOrderCount>		    
+                    <_customerCustomerCount translate="title" module="revenueconduit">
+                        <title>Retrieve count of customers</title>
+                        <method>customer_count</method>
+                        <acl>revenueconduit_sales/order</acl>
+                    </_customerCustomerCount>
+                    <_catalogProductCount translate="title" module="revenueconduit">
+                        <title>Retrieve count of products</title>
+                        <method>product_count</method>
+                        <acl>revenueconduit_sales/order</acl>
+                    </_catalogProductCount>		    
+                    <_catalogCategoryCount translate="title" module="revenueconduit">
+                        <title>Retrieve count of product categories</title>
+                        <method>product_category_count</method>
+                        <acl>revenueconduit_sales/order</acl>
+                    </_catalogCategoryCount>
+                    <_customerIsSubscribed translate="title" module="revenueconduit">
+                        <title>Check if customer is subscribed</title>
+                        <method>customer_get_subscription_status</method>
+                        <acl>revenueconduit_sales/order</acl>
+                    </_customerIsSubscribed>		    
+                </methods>
+                <faults module="revenueconduit"> <not_exists>
+                        <code>100</code>
+                        <message>Requested order not exists.</message>
+                    </not_exists>
+                    <filters_invalid>
+                        <code>101</code>
+                        <message>Invalid filters given. Details in error message.</message>
+                    </filters_invalid>
+                    <data_invalid>
+                        <code>102</code>
+                        <message>Invalid data given. Details in error message.</message>
+                    </data_invalid>
+                    <status_not_changed>
+                        <code>103</code>
+                        <message>Order status not changed. Details in error message.</message>
+                    </status_not_changed>
+                </faults>
+            </revenueconduit_sales>
+        </resources>
+        <resources_alias>
+            <order>sales_order</order>
+        </resources_alias>
+        <v2>
+            <resources_function_prefix>
+                <revenueconduit_sales>RevenueConduit</revenueconduit_sales>
+            </resources_function_prefix>
+        </v2>
+        <acl>
+            <resources>
+                <revenueconduit_sales translate="title" module="revenueconduit">
+                    <title>Sales</title>
+                    <sort_order>2</sort_order>
+                    <order translate="title" module="revenueconduit">
+                        <title>Order</title>
+                        <change translate="title" module="revenueconduit">
+                            <title>Change status, add comments</title>
+                        </change>
+                    </order>
+                </revenueconduit_sales>
+            </resources>
+        </acl>
+    </api>
+</config>
+
